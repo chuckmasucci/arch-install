@@ -1,4 +1,4 @@
-sudo pacman -S zsh neovim networkmanager sudo curl git bat interception-tools interception-dual-function-keys base-devel tmux xorg xorg-server xorg-apps kitty imagemagick python-pygments nvidia python python-pip
+sudo pacman -S zsh neovim networkmanager sudo curl git bat interception-tools interception-dual-function-keys base-devel tmux xorg xorg-server xorg-apps kitty imagemagick python-pygments nvidia python python-pip xorg-xinit
 
 export EDITOR=nvim
 
