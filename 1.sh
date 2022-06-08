@@ -5,7 +5,7 @@ export EDITOR=nvim
 ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
 hwclock --systohc
 
-pacman -S zsh neovim networkmanager sudo curl git bat refind interception-tools interception-dual-function-keys base-devel tmux xorg xorg-server xorg-apps kitty imagemagick python-pygments nvidia python python-pip xorg-xinit nerd-fonts-profont
+pacman -S zsh neovim networkmanager sudo curl git bat refind interception-tools interception-dual-function-keys base-devel tmux xorg xorg-server xorg-apps kitty imagemagick python-pygments nvidia python python-pip xorg-xinit nerd-fonts-dejavu-complete pulseaudio pavucontrol
 
 refind-install
 
