@@ -9,7 +9,7 @@ hwclock --systohc
 
 refind-install
 
-mkdir /etc/interception/dual-function-keys
+mkdir -p /etc/interception/dual-function-keys
 
 cat <<EOF >/etc/locale.conf
 en_US.UTF-8 UTF-8
