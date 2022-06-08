@@ -2,7 +2,7 @@
 
 export EDITOR=nvim
 
-pacman -S zsh neovim networkmanager sudo curl git bat ssh refind interception-tools interception-dual-function-keys base-devel tmux xorg xorg-server xorg-apps kitty imagemagick python-pygments nvidia python python-pip xorg-xinit pulseaudio pavucontrol
+pacman -S zsh neovim networkmanager sudo curl git bat refind interception-tools interception-dual-function-keys base-devel tmux xorg xorg-server xorg-apps kitty imagemagick python-pygments nvidia python python-pip xorg-xinit pulseaudio pavucontrol
 
 ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
 hwclock --systohc
