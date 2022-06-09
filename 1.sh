@@ -22,7 +22,7 @@ cat <<EOF >/etc/hosts
 EOF
 
 cat <<EOF >/etc/interception/udevmon.yaml
-- JOB: "intercept -g $DEVNODE | dual-function-keys -c /etc/interception/dual-function-keys/default.yaml | uinput -d $DEVNODE"
+- JOB: "intercept -g \$DEVNODE | dual-function-keys -c /etc/interception/dual-function-keys/default.yaml | uinput -d \$DEVNODE"
   DEVICE:
     EVENTS:
       EV_KEY: [KEY_CAPSLOCK, KEY_ENTER]
