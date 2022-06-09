@@ -15,8 +15,12 @@ cat <<EOF >/etc/locale.gen
 en_US.UTF-8 UTF-8
 EOF
 
+cat <<EOF >/etc/hostname
+arrakis
+EOF
+
 cat <<EOF >/etc/locale.conf
-LANG=en_US.UTF-8 UTF-8
+LANG=en_US.UTF-8
 EOF
 
 cat <<EOF >/etc/hosts
