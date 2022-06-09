@@ -19,9 +19,9 @@ Host github.com
 EOF
 
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
-mkdir ~/.local/src
-mkdir ~/.local/bin
+mkdir -p ~/.local/src
+mkdir -p ~/.local/bin
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
