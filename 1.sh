@@ -12,7 +12,7 @@ refind-install
 mkdir -p /etc/interception/dual-function-keys
 
 cat <<EOF >/etc/locale.conf
-en_US.UTF-8 UTF-8
+LANG=en_US.UTF-8 UTF-8
 EOF
 
 cat <<EOF >/etc/hosts
