@@ -2,10 +2,12 @@
 
 export EDITOR=nvim
 
-pacman -S zsh neovim networkmanager sudo curl git bat openssh refind interception-tools interception-dual-function-keys base-devel tmux xorg xorg-server xorg-apps kitty imagemagick python-pygments nvidia nvidia-settings python python-pip xorg-xinit pulseaudio pavucontrol dmenu i3-gaps firefox yadm picom
+pacman -S zsh neovim networkmanager sudo curl git bat openssh refind interception-tools interception-dual-function-keys base-devel tmux xorg xorg-server xorg-apps kitty imagemagick python-pygments nvidia nvidia-settings python python-pip xorg-xinit pulseaudio pavucontrol firefox unzip network-manager-applet hplip system-config-printer
 
 ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
 hwclock --systohc
+
+timedatectl set-ntp true
 
 refind-install
 
@@ -50,4 +52,17 @@ MAPPINGS:
     HOLD: KEY_LEFTCTRL
 EOF
 
+locale-gen
+
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/install.sh)"
+
+
+# systemd
+# NetworkManager
+# udevmon
+# cups
+
+
+
+
+
