@@ -34,6 +34,6 @@ mkdir -p ~/.local/bin
 #sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh)"
 
-yay -S dmenu i3-gaps i3-status yadm picom google-chrome fzf timeshift lxappearance redshift rofi dunst ripgrep htop w3m ffmpegthumbnailer maim udiskie ulauncher
+yay -S xclip dmenu i3-gaps i3-status yadm picom google-chrome fzf timeshift lxappearance redshift rofi dunst ripgrep htop w3m ffmpegthumbnailer maim udiskie ulauncher xone-dkms xboxdrv mimeo feh unclutter
 
 pip install --user i3ipc pynput pillow
