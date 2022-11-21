@@ -1,6 +1,8 @@
 #!/bin/bash
 
+# -------------------------------------------------------------
 # hosts
+# -------------------------------------------------------------
 cat <<EOF >/etc/hosts
 127.0.0.1	localhost
 ::1		localhost
@@ -10,15 +12,18 @@ EOF
 
 # -------------------------------------------------------------
 # aur packages
+# -------------------------------------------------------------
 pacman -S --needed - < aur_packages.txt
 
 # -------------------------------------------------------------
 # refind
+# -------------------------------------------------------------
 refind-install
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/install.sh)"
 
 # -------------------------------------------------------------
 # udevmon
+# -------------------------------------------------------------
 mkdir -p /etc/interception/dual-function-keys
 
 cat <<EOF >/etc/interception/udevmon.yaml
