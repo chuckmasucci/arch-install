@@ -24,15 +24,7 @@ EOF
 # -------------------------------------------------------------
 # yay
 # -------------------------------------------------------------
-git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-
-# -------------------------------------------------------------
-# nerd fonts
-# -------------------------------------------------------------
-git clone https://github.com/ronniedroid/getnf.git
-cd getnf
-./install.sh
-getnf
+git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm
 
 # -------------------------------------------------------------
 # lunarvim
@@ -45,11 +37,24 @@ LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # -------------------------------------------------------------
-# yadm
+# aur packages
 # -------------------------------------------------------------
-yadm clone -f https://github.com/chuckmasucci/dotfiles.git
+yay -S --noconfirm --needed - < aur_packages.txt
+
+# -------------------------------------------------------------
+# nerd fonts
+# -------------------------------------------------------------
+git clone https://github.com/ronniedroid/getnf.git
+cd getnf
+./install.sh
+getnf
 
 # -------------------------------------------------------------
 # nvidia settings
 # -------------------------------------------------------------
-cp /home/chuck/xorg.conf /etc/X11/
+sudo cp /home/chuck/xorg.conf /etc/X11/
+
+# -------------------------------------------------------------
+# yadm
+# -------------------------------------------------------------
+yadm clone -f https://github.com/chuckmasucci/dotfiles.git

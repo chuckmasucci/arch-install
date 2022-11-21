@@ -8,7 +8,7 @@ fzf
 google-chrome
 htop
 i3
-i3-status
+i3status
 lxappearance
 maim
 mimeo
