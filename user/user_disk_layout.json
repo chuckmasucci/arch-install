@@ -1,62 +1,62 @@
 {
-    "/dev/nvme0n1": {
-        "partitions": [
-            {
-                "ESP": true,
-                "PARTUUID": "B9B8-2F84",
-                "boot": true,
-                "encrypted": false,
-                "filesystem": {
-                    "format": "vfat"
-                },
-                "mountpoint": "/boot",
-                "size": 614400,
-                "start": 2048,
-                "type": "primary",
-                "wipe": true
-            },
-            {
-                "ESP": false,
-                "PARTUUID": "e696f9d8-a80e-42c4-82f3-3dddedb9e27b",
-                "boot": false,
-                "encrypted": false,
-                "filesystem": {
-                    "format": "swap"
-                },
-                "mountpoint": null,
-                "size": 33554432,
-                "start": 616448,
-                "type": "primary",
-                "wipe": false
-            },
-            {
-                "ESP": false,
-                "PARTUUID": "7fde96fa-1e42-4cd1-9386-1d758e48ade0",
-                "boot": false,
-                "encrypted": false,
-                "filesystem": {
-                    "format": "ext4"
-                },
-                "mountpoint": "/",
-                "size": 629145600,
-                "start": 34170880,
-                "type": "primary",
-                "wipe": true
-            },
-            {
-                "ESP": false,
-                "PARTUUID": "074ae415-15e9-4a2e-bf9a-728cb864bc77",
-                "boot": false,
-                "encrypted": false,
-                "filesystem": {
-                    "format": "ext4"
-                },
-                "mountpoint": "/home",
-                "size": 1290207232,
-                "start": 663316480,
-                "type": "primary",
-                "wipe": true
-            }
-        ]
-    }
+  "/dev/nvme0n1": {
+    "partitions": [
+      {
+        "ESP": true,
+        "PARTUUID": "B9B8-2F84",
+        "boot": true,
+        "encrypted": false,
+        "filesystem": {
+          "format": "vfat"
+        },
+        "mountpoint": "/boot",
+        "size": 614400,
+        "start": 2048,
+        "type": "primary",
+        "wipe": true
+      },
+      {
+        "ESP": false,
+        "PARTUUID": "e696f9d8-a80e-42c4-82f3-3dddedb9e27b",
+        "boot": false,
+        "encrypted": false,
+        "filesystem": {
+          "format": "swap"
+        },
+        "mountpoint": null,
+        "size": 33554432,
+        "start": 616448,
+        "type": "primary",
+        "wipe": false
+      },
+      {
+        "ESP": false,
+        "PARTUUID": "7fde96fa-1e42-4cd1-9386-1d758e48ade0",
+        "boot": false,
+        "encrypted": false,
+        "filesystem": {
+          "format": "ext4"
+        },
+        "mountpoint": "/",
+        "size": 629145600,
+        "start": 34170880,
+        "type": "primary",
+        "wipe": true
+      },
+      {
+        "ESP": false,
+        "PARTUUID": "074ae415-15e9-4a2e-bf9a-728cb864bc77",
+        "boot": false,
+        "encrypted": false,
+        "filesystem": {
+          "format": "ext4"
+        },
+        "mountpoint": "/home",
+        "size": 1290207232,
+        "start": 663316480,
+        "type": "primary",
+        "wipe": true
+      }
+    ]
+  }
 }
