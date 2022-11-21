@@ -1,3 +1,4 @@
+barrier
 dmenu
 dunst
 firefox
@@ -12,6 +13,7 @@ lxappearance
 maim
 mimeo
 mpv
+nvidia-settings
 picom
 ranger
 redshift
