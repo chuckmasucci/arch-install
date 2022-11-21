@@ -42,3 +42,4 @@ MAPPINGS:
     HOLD: KEY_LEFTCTRL
 EOF
 
+systemctl enable --now udevmon.service
