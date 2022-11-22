@@ -7,8 +7,6 @@ ffmpegthumbnailer
 fzf
 google-chrome
 htop
-i3
-i3status
 lxappearance
 maim
 mimeo
