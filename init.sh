@@ -52,7 +52,11 @@ getnf
 # -------------------------------------------------------------
 # yadm
 # -------------------------------------------------------------
-yadm clone -f https://github.com/chuckmasucci/dotfiles.git
+cd
+yadm init
+yadm remote add origin https://github.com/chuckmasucci/dotfiles.git
+yadm fetch
+yadm checkout origin/master ft
 
 # -------------------------------------------------------------
 # nvidia settings
