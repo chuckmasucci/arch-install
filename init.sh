@@ -32,11 +32,6 @@ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm
 LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 
 # -------------------------------------------------------------
-# oh-my-zsh
-# -------------------------------------------------------------
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
-# -------------------------------------------------------------
 # aur packages
 # -------------------------------------------------------------
 yay -S --noconfirm --needed - < aur_packages.txt
@@ -47,7 +42,12 @@ yay -S --noconfirm --needed - < aur_packages.txt
 git clone https://github.com/ronniedroid/getnf.git
 cd getnf
 ./install.sh
-getnf
+$HOME/.local/bin/getnf
+
+# -------------------------------------------------------------
+# oh-my-zsh
+# -------------------------------------------------------------
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # -------------------------------------------------------------
 # yadm
@@ -56,9 +56,9 @@ cd
 yadm init
 yadm remote add origin https://github.com/chuckmasucci/dotfiles.git
 yadm fetch
-yadm checkout origin/master ft
+yadm checkout origin/master -ft
 
 # -------------------------------------------------------------
 # nvidia settings
 # -------------------------------------------------------------
-sudo cp /home/chuck/xorg.conf /etc/X11/
+sudo cp $HOME/xorg.conf /etc/X11/
