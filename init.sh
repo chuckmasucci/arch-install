@@ -44,17 +44,17 @@ yay -S --noconfirm --needed - < aur_packages.txt
 # -------------------------------------------------------------
 # nerd fonts
 # -------------------------------------------------------------
-# git clone https://github.com/ronniedroid/getnf.git
-# cd getnf
-# ./install.sh
-# getnf
-
-# -------------------------------------------------------------
-# nvidia settings
-# -------------------------------------------------------------
-# sudo cp /home/chuck/xorg.conf /etc/X11/
+git clone https://github.com/ronniedroid/getnf.git
+cd getnf
+./install.sh
+getnf
 
 # -------------------------------------------------------------
 # yadm
 # -------------------------------------------------------------
 yadm clone -f https://github.com/chuckmasucci/dotfiles.git
+
+# -------------------------------------------------------------
+# nvidia settings
+# -------------------------------------------------------------
+sudo cp /home/chuck/xorg.conf /etc/X11/
