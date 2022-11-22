@@ -34,7 +34,7 @@ LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.
 # -------------------------------------------------------------
 # aur packages
 # -------------------------------------------------------------
-yay -S --noconfirm --needed - < aur_packages.txt
+yay -S --noconfirm --needed barrier dmenu dunst firefox feh ffmpegthumbnailer fzf google-chrome htop lxappearance maim mimeo mpv nvidia-settings picom ranger redshift ripgrep rofi timeshift udiskie ulauncher unclutter w3m xboxdrv xclip xone-dkms yadm
 
 # -------------------------------------------------------------
 # nerd fonts
