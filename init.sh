@@ -3,11 +3,11 @@
 mkdir -p ~/.local/src
 mkdir -p ~/.local/bin
 mkdir -p ~/.local/share/fonts
+mkdir $HOME/.ssh
 
 # -------------------------------------------------------------
 # ssh
 # -------------------------------------------------------------
-mkdir ~/.ssh
 ssh-keygen -t ed25519 -C "cmasucci@gmail.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519_github
