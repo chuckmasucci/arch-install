@@ -24,5 +24,6 @@ unclutter
 w3m
 xboxdrv
 xclip
+xscreensaver
 xone-dkms
 yadm

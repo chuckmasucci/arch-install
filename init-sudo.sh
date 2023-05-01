@@ -48,3 +48,4 @@ MAPPINGS:
 EOF
 
 systemctl enable --now udevmon.service
+systemctl enable --now cups.service
