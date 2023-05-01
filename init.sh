@@ -42,7 +42,7 @@ cp .tmux/.tmux.conf.local .
 # -------------------------------------------------------------
 # aur packages
 # -------------------------------------------------------------
-yay -S --noconfirm --needed barrier dmenu dunst firefox feh ffmpegthumbnailer fzf google-chrome htop lxappearance maim mimeo mpv nvidia-settings picom ranger redshift ripgrep rofi timeshift udiskie ulauncher unclutter w4m xboxdrv xclip xone-dkms yadm qbittorrent dracula-gtk-theme vimix-cursors noto-fonts-emoji xscreensaver hsetroot android-messages-desktop-bin google-chat-linix-bin noto-fonts noto-fonts-cjk spotify-launcher slack ttf-arimo-nerd noto-fonts noto-fonts-cjk xdotool xkblayout-state-git
+yay -S --noconfirm --needed barrier dmenu dunst firefox feh ffmpegthumbnailer fzf google-chrome htop lxappearance maim mimeo mpv nvidia-settings picom ranger redshift ripgrep rofi timeshift udiskie ulauncher unclutter w4m xboxdrv xclip xone-dkms yadm qbittorrent dracula-gtk-theme vimix-cursors noto-fonts-emoji xscreensaver hsetroot android-messages-desktop-bin google-chat-linix-bin noto-fonts noto-fonts-cjk spotify-launcher slack ttf-arimo-nerd noto-fonts noto-fonts-cjk xdotool xkblayout-state-git lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings paper-icon-theme
 
 # -------------------------------------------------------------
 # nerd fonts
@@ -76,4 +76,4 @@ sudo cp $HOME/xorg.conf /etc/X11/
 
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade pillow
-pip install Pint simpleeval parsedatetime pytz
+pip install Pint simpleeval parsedatetime pytz glances

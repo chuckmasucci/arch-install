@@ -49,3 +49,4 @@ EOF
 
 systemctl enable --now udevmon.service
 systemctl enable --now cups.service
+systemctl enable --now lightdm.service
